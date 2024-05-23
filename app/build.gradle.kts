@@ -55,6 +55,7 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.constraintlayout.compose)
     implementation(libs.androidx.security.crypto)
+    implementation(libs.play.services.ads.lite)
     annotationProcessor(libs.androidx.room.compiler)
     kapt(libs.androidx.room.compiler)
     implementation(libs.kotlin.json.serialization)

@@ -16,6 +16,7 @@ constraintlayout = "2.1.4"
 constraintlayoutCompose = "1.1.0-alpha13"
 securityCrypto = "1.1.0-alpha06"
 jsonSerial = "1.6.3"
+playServicesAdsLite = "23.1.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -41,6 +42,7 @@ symbol-processing-api = { module = "com.google.devtools.ksp:symbol-processing-ap
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 androidx-constraintlayout-compose = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version.ref = "constraintlayoutCompose" }
 androidx-security-crypto = { group = "androidx.security", name = "security-crypto", version.ref = "securityCrypto" }
+play-services-ads-lite = { group = "com.google.android.gms", name = "play-services-ads-lite", version.ref = "playServicesAdsLite" }
 
 
 [plugins]

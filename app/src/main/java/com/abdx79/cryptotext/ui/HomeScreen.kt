@@ -24,7 +24,9 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.viewinterop.AndroidView
 import com.abdx79.cryptotext.R
+import com.google.android.gms.ads.AdView
 
 
 @Preview(widthDp = 360, heightDp = 640, showBackground = true)
@@ -81,6 +83,14 @@ fun MakeHomeScreenButtons(modifier: Modifier = Modifier) {
     }
 
     Spacer(Modifier.padding(6.dp))
+    
+    AndroidView(factory = { context2 ->
+        AdView(context2).apply {
+            setAdSize(com.google.android.gms.ads.AdSize.BANNER)
+            adUnitId = "ca-app-pub-3940256099942544/6300978111"
+            loadAd(com.google.android.gms.ads.AdRequest.Builder().build())
+        }
+    })
 
     RoundedElevatedButton(modifier = modifier, onClick = {
         context.startActivity(Intent(context, DecryptionActivity::class.java))
